@@ -30,3 +30,39 @@ $(window).scroll(function() {
         $('.card-3').removeClass('moveFromBottom');
     }
 })
+
+/* end of pricing section */
+
+/* slow scroll */
+
+$("#home-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#home").offset().top
+    }, 1000);
+});
+
+$("#registration-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#registration").offset().top
+    }, 1000);
+});
+
+$("#gallery-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#gallery").offset().top
+    }, 1000);
+});
+
+$("#guidelines-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#guidelines").offset().top
+    }, 1000);
+});
+
+$("#contact-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 1000);
+});
+
+/* end of slow scroll */
