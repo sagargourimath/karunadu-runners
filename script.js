@@ -1,9 +1,10 @@
-$(document).ready(function() {
-    $('.nav-button').click(function () {
-        $('.nav-button').toggleClass('change');
-    });
+/* Navbar toggler */
+$('.nav-button').click(function() {
+    $(this).toggleClass('change');
 });
+/* end of Navbar toggler */
 
+/* Nav bar effect on scroll */
 $(document).ready(function() {
     $(window).scroll(function(){
         let position = $(this).scrollTop();
@@ -14,9 +15,9 @@ $(document).ready(function() {
         }
 });
 });
+/* end of Nav bar effect on scroll */
 
 /* pricing section */
-
 $(window).scroll(function() {
     let position = $(this).scrollTop();
     if (position >= 400) {
@@ -30,11 +31,9 @@ $(window).scroll(function() {
         $('.card-3').removeClass('moveFromBottom');
     }
 })
-
 /* end of pricing section */
 
 /* slow scroll */
-
 $("#home-button").click(function() {
     $('html, body').animate({
         scrollTop: $("#home").offset().top
@@ -64,5 +63,4 @@ $("#contact-button").click(function() {
         scrollTop: $("#contact").offset().top
     }, 1000);
 });
-
 /* end of slow scroll */
