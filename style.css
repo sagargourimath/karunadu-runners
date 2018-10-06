@@ -103,6 +103,7 @@ color: #70aed2;
 .card-1, .card-2, .card-3 {
   background: linear-gradient(rgba(34, 33, 33, 0.5), rgba(92, 58, 26, 0.6)) , url(images/pricing.jpg) center no-repeat /cover;
   max-width: 400px;
+  opacity: 0;
 }
 
 .price-card-button {
