@@ -97,3 +97,94 @@ color: #70aed2;
   user-select: none;
 }
 /* end of gallery */
+
+/* pricing */
+
+.card-1, .card-2, .card-3 {
+  background: linear-gradient(rgba(34, 33, 33, 0.5), rgba(92, 58, 26, 0.6)) , url(images/pricing.jpg) center no-repeat /cover;
+  max-width: 400px;
+}
+
+.price-card-button {
+  background: #f5593d;
+  width: 130px;
+  border-radius: 20px;
+  transition: all .2s
+}
+
+.price-card-button:hover {
+  background: #f9793d;
+  transform: translateY(-2px)
+}
+
+.moveFromBottom {
+  animation: moveFromBottom 2s;
+}
+
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* end of pricing */
+
+/* contact */
+
+.contact {
+  background: linear-gradient(105deg, 
+  rgba(21, 31, 32, 1) 0%, 
+  rgba(21, 31, 32, .95) 50%, 
+  transparent 50%), 
+  url(images/contact.jpg) center no-repeat /cover;
+
+}
+
+.input {
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #eee;
+  border-radius: 0;
+  transition: all .8s
+}
+
+.input:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  border-bottom: 2px solid #f5593d;
+}
+
+.submit-button {
+  transition: all .3s
+}
+.submit-button:hover {
+  transform: translateY(-3px)
+}
+
+.label {
+  color: #777;
+  display: block;
+  margin-top: -70px;
+  margin-left: 4px;
+  font-size: 13px;
+  transition: all .3s;
+}
+
+.input:placeholder-shown + label {
+  transform: translate(20px, 20px);
+  opacity: 0;
+  visibility: hidden;
+}
+/* end of contact */
+
+/* footer */
+
+.footer-paragraph {
+  font-size: 10px;
+}
