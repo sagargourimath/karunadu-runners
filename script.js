@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     let position = $(this).scrollTop();
-    if (position >= 1600) {
+    if (position >= 1400) {
         $('.card-1').addClass('moveFromBottom');
         $('.card-2').addClass('moveFromBottom');
         $('.card-3').addClass('moveFromBottom');
