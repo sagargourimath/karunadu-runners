@@ -34,6 +34,12 @@ $(window).scroll(function() {
 /* end of pricing section */
 
 /* slow scroll */
+$("#left-home-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#home").offset().top
+    }, 3000);
+});
+
 $("#home-button").click(function() {
     $('html, body').animate({
         scrollTop: $("#home").offset().top
