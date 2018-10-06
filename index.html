@@ -27,25 +27,26 @@
 
       <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="myNavbar">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+            <li id="home-button" class="nav-item">
+              <a href="#home" class="nav-link m-2 menu-item nav-active">Home</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">Registration</a>
+            <li id="registration-button" class="nav-item">
+                <a href="#registration" class="nav-link m-2 menu-item">Registration</a>
               </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link m-2 menu-item">Gallery</a>
+            <li id="gallery-button" class="nav-item">
+              <a href="#gallery" class="nav-link m-2 menu-item">Gallery</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">Guidelines</a>
+            <li id="guidelines-button" class="nav-item">
+                <a href="#guidelines" class="nav-link m-2 menu-item">Guidelines</a>
               </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link m-2 menu-item">Contact</a>
+            <li id="contact-button" class="nav-item">
+              <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
             </li>
           </ul>
         </div>
     </nav>
     <!-- end of navbar -->
+    <div id="home"> </div>
     <!-- banner -->
     <div class="text-light text-md-right text-center banner">
       <h1 class="display-4 banner-heading">ಕರುನಾಡ ಓಟಗಾರರು</h1>
@@ -53,7 +54,7 @@
     </div>
     <!-- end of banner -->
   </header>
-
+  <div id="registration"> <br> <br> </div>
         <!-- pricing -->
         <section class="text-center p-1">
             <div class="container-fluid">
@@ -61,9 +62,20 @@
                 <div class="col m-4">
                   <h1 class="display-4 mb-4">Join Us</h1>
                   <div class="underline mb-4"></div>
+                  <p class="lead text-md-left">
+                      Upcoming event:
+                      <ul class="text-md-left p-3">
+                        <li>Age - 15 to 85 years.</li>
+                        <li>Date - MM/DD/YYYY | Sunday</li>
+                        <li>Last date to register - MM/DD/YYYY</li>
+                        <li>Venue - Bangalore University Campus</li>
+                        <li>Categories - 5K Run, 10K Run & 21K Run</li>
+                      </ul>
+                      <p class="text-md-left">Every participant will be getting an exclusive free T-Shirt.</p>
+                    </p>
                 </div>
               </div>
-              <div class="row">
+              <div class="row px-5">
                 <div class="col-lg-4">
                   <div class="card-1 text-light">
                     <div class="card-body text-uppercase font-weight-bold mb-5">
@@ -94,9 +106,8 @@
               </div>
             </div>
           </section>
-        
-          <!-- end of pricing -->
-
+  <!-- end of pricing -->
+  <div id="gallery"> </div>
   <!-- gallery -->
   <section class="py-5">
     <div class="container-fluid">
@@ -124,15 +135,27 @@
     </div>
   </section>
   <!-- end of gallery -->
-
+<div id="guidelines"> <br></div>
   <!-- guidelines -->
-  <section class="text-center py-4">
+  <section  class="text-center py-4">
     <div class="container-fluid">
       <div class="row text-white text-left">
         <div class="col m-4">
           <h1 class="display-4 mb-4 text-center">Guidelines</h1>
           <div class="underline mb-4"></div>
-          <p class="lead text-left"><ul>
+          <p class="text-left"><ul>
+            <li>No refund of entry fee will be made at any point after payment confirmation.</li>
+            <li>You are to participate only in the race category for which you had applied and for which your entry has been confirmed.</li>
+            <li>Organizers reserve the right to stop any participant from participating who is found medically unfit to continue in the opinion of the medical personnel.</li>
+            <li>Organizers are not responsible for any loss or baggage and belongings.</li>
+            <li>Participants are requested to cooperate with the police and security personnel deputed at the event venues and on route. Participants/supporters are liable to random checking on race day, this is for your own security.</li>
+            <li>Photographs taken of runners during any event organised prior to and on race day can be used for the purpose of promoting the event.</li>
+            <li>No refund of entry fee will be made at any point after payment confirmation.</li>
+            <li>You are to participate only in the race category for which you had applied and for which your entry has been confirmed.</li>
+            <li>Organizers reserve the right to stop any participant from participating who is found medically unfit to continue in the opinion of the medical personnel.</li>
+            <li>Organizers are not responsible for any loss or baggage and belongings.</li>
+            <li>Participants are requested to cooperate with the police and security personnel deputed at the event venues and on route. Participants/supporters are liable to random checking on race day, this is for your own security.</li>
+            <li>Photographs taken of runners during any event organised prior to and on race day can be used for the purpose of promoting the event.</li>
             <li>No refund of entry fee will be made at any point after payment confirmation.</li>
             <li>You are to participate only in the race category for which you had applied and for which your entry has been confirmed.</li>
             <li>Organizers reserve the right to stop any participant from participating who is found medically unfit to continue in the opinion of the medical personnel.</li>
@@ -146,7 +169,7 @@
   </section>
 
   <!-- end of guidelines -->
-
+  <div id="contact"> <br></div>
     <!-- contact -->
     <section class="contact p-5">
       <div class="container-fluild">
@@ -162,9 +185,10 @@
             <div class="form-group py-4">
                 <input type="text" class="form-control my-2 p-2 input" spellcheck="false" placeholder="Email Address">
                 <label for="email" class="label text-left">Email Address</label>
-              </div>
-              <br>
-              <button type="submit" style="cursor: pointer;" class="btn-block p-2 font-weight-bold text-uppercase submit-button">Submit</button>
+            </div>
+                <textarea class="form-control my-2 p-2 message" rows="5" id="comment" spellcheck="false" placeholder="Message"></textarea>
+            <br>
+                <button type="submit" style="cursor: pointer;" class="btn-block p-2 font-weight-bold text-uppercase submit-button">Submit</button>
             </form>
           </div>
         </div>
@@ -176,8 +200,15 @@
 
         <footer class="bg-dark px-5">
             <div class="container-fluid"></div>
-                  <p class="footer-paragraph text-light py-4"><i class="far fa-copyright"></i> Site designed by <a class="text-light" href="https://in.linkedin.com/in/sagar-gourimath-b51b3496" target="_blank">Sagar Gourimath</a>. All Rights Reserved. Stock images taken from <a class="text-light" href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
-            </div>
+                
+                    <ul class="list-inline text-right py-2" style="float: right">
+                        <li class="list-inline-item"><i class="fab fa-facebook-square fa-2x text-primary"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-instagram fa-2x text-danger"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-twitter fa-2x text-info"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-youtube fa-2x text-danger"></i></li>
+                      </ul>
+                      <p style="float: left" class="footer-paragraph text-light py-2"> &copy; Site designed by <a class="text-light" href="https://in.linkedin.com/in/sagar-gourimath-b51b3496" target="_blank">Sagar Gourimath</a>. All Rights Reserved. Stock images taken from <a class="text-light" href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
+          </div>
           </footer>
           <!-- end of footer -->
 
