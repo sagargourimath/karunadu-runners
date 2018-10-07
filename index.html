@@ -163,9 +163,9 @@
           <p class="text-left"><ul>
             <br>
             <div class="lead">Reporting Time:</div>
-            <li>21K participants will report at the venue at 4:45 AM on the day of the event for T-Shirt collection.
+            <li>21K participants to report at the venue at 4:45 AM on the day of the event for T-Shirt collection.
                 Run for 21K starts at 5:30 AM.</li>
-            <li>5K and 10K participants need to report on the venue on the day of the event for T-Shirt collection at 5:30 AM.</li>
+            <li>5K and 10K participants to report at the venue on the day of the event for T-Shirt collection at 5:30 AM.</li>
             <li>Run for 5K and 10K starts exactly at 6:30 AM.</li>
             <li>Prize Distribution at 8:15AM.</li>
           </ul></p>
@@ -182,18 +182,18 @@
           <div class="col-lg-5 pb-4">
             <h3 class="display-4 mb-3">Get In Touch</h3>
             <div class="underline mb-4"></div>
-            <form class="contact-form">
+            <form class="contact-form" method="POST" action="process.php">
             <div class="form-group py-4">
-              <input type="text" class="form-control my-2 p-2 input" spellcheck="false" placeholder="Name">
+              <input type="text" class="form-control my-2 p-2 input" name="name" spellcheck="false" placeholder="Name" required>
               <label for="name" class="label text-left">Name</label>
             </div>
             <div class="form-group py-4">
-                <input type="text" class="form-control my-2 p-2 input" spellcheck="false" placeholder="Email Address">
+                <input type="text" class="form-control my-2 p-2 input" name="email" spellcheck="false" placeholder="Email Address" required>
                 <label for="email" class="label text-left">Email Address</label>
             </div>
-                <textarea class="form-control my-2 p-2 message" rows="5" id="comment" spellcheck="false" placeholder="Message"></textarea>
+                <textarea class="form-control my-2 p-2 message" rows="5" name="message" spellcheck="false" placeholder="Message" required></textarea>
             <br>
-                <button type="submit" style="cursor: pointer;" class="btn-block p-2 font-weight-bold text-uppercase submit-button">Submit</button>
+                <button type="submit" style="cursor: pointer;" name="submit" class="btn-block p-2 font-weight-bold text-uppercase submit-button">Submit</button>
             </form>
           </div>
         </div>
