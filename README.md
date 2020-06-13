@@ -1,1 +1,2 @@
-# karunadurunners.github.io
+# Karunadu Runners
+A static website for marathon runners
